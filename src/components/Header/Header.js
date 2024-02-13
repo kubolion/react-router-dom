@@ -20,8 +20,10 @@ const Header = () => {
                 <button className='py-[12px] pl-[16px] pr-[24px] rounded-[10px] bg-[#FF855F] text-white flex gap-[8px]  '>{<CatInBox/>} <p className='text-inherit'>I lost a Pet</p> </button>
             </div>
         </div>
+        pfdf
     </div>
 </header>
+
     );
 };
 
