@@ -1,17 +1,23 @@
+// AllNewsBlock.jsx
 import React from 'react';
 import BlockWrapper from "../../BlockWrapper/BlockWrapper";
 
-const AllNewsBlock = ({display = 'block' }) => {
+const AllNewsBlock = ({ display = 'block', data }) => {
     return (
-        <div className={`${display} `}>
-        <BlockWrapper>
-            <div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt eaque eos fugiat, illum ipsa maxime numquam porro quas quos reprehenderit sit ullam, veniam! A deserunt nemo nesciunt officiis quis quisquam!</p>
-            </div>
-            <div>
-                <img src="" alt="картинка поста"/>
-            </div>
-        </BlockWrapper>
+        <div className='flex flex-col gap-[25px]'>
+            {data && data.map((item) => (
+                <div key={item.id} className={`${display} `}>
+                    <BlockWrapper>
+                        <div>
+                            <p>{item.title}</p>
+                        </div>
+                        <div className='flex gap-[10px] '>
+                            <img className='max-w-[280px] rounded-[10px] ' src={item.url} alt="картинка поста" />
+                            <img className='max-w-[280px] rounded-[10px] ' src={item.url} alt="картинка поста" />
+                        </div>
+                    </BlockWrapper>
+                </div>
+            ))}
         </div>
     );
 };
