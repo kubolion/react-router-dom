@@ -1,4 +1,3 @@
-// AllNewsBlock.jsx
 import React from 'react';
 import BlockWrapper from "../../BlockWrapper/BlockWrapper";
 

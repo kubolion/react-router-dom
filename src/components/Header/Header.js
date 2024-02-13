@@ -2,11 +2,11 @@ import React from 'react';
 import GlobalSearch from "../GlobalSearch/GlobalSearch";
 import {CatInBox, NotificationIcon, PawIcon} from "../IconNavItems";
 import Logo from "../Logo/Logo";
-
 const Header = () => {
+
     return (
 <header>
-    <div className='w-[100%]  h-[200px] bg-green-800'>
+    <div className= ' bg-cover bg-center w-[100%]  h-[200px] header-bg ' >
         <div className='w-[1200px] mx-auto flex flex-row justify-between '>
             <div className=' w-[240px] px-[15px] py-[20px]' >
                 <Logo/>

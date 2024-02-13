@@ -20,6 +20,11 @@ html {
     color: #161616;
     font-family:  "Nunito Sans", sans-serif;
 }
+
+.header-bg{
+    background-image: url('./images/header-bg.png');
+}
+
 .dody-aside--maim_list li {
     padding: 10px 15px;
 }

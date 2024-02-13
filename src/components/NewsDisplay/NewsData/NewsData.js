@@ -1,4 +1,3 @@
-// NewsData.jsx
 import React from 'react';
 import AllNewsBlock from "../AllNewsBlock/AllNewsBlock";
 import LostFoundBlock from "../LostFoundBlock/LostFoundBlock";
